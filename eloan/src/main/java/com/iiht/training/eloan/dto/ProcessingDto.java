@@ -16,6 +16,7 @@ public class ProcessingDto {
 	private String appraisedBy;
 	private String valuationDate;
 	@NotEmpty(message = "addressOfProperty is required!")
+	@Length(min=3, max=150)
 	private String addressOfProperty;
 	@DecimalMin(value= "1.0")
 	private Double suggestedAmountOfLoan;
